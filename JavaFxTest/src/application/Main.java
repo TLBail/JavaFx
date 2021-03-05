@@ -17,7 +17,7 @@ import javafx.scene.image.ImageView;
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("titleApp/sample.fxml"));
         primaryStage.setTitle("Hello World");
         Scene scene = new Scene(root, 800, 600);
         primaryStage.setScene(scene);
@@ -36,6 +36,7 @@ public class Main extends Application {
         transition.setCycleCount(Animation.INDEFINITE);
         transition.play();
         
+    	
         //icon
         InputStream iconStream = getClass().getResourceAsStream("..\\data\\duck.jpg");
         if(iconStream == null) System.out.println("pas trouvé");
@@ -45,6 +46,11 @@ public class Main extends Application {
         
         
         primaryStage.show();
+        
+        
+        
+        
+        
         
         
     }

@@ -3,8 +3,11 @@ package application;
 import javafx.animation.Animation;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
 import javafx.util.Duration;
 
 public class SampleController {
@@ -15,6 +18,9 @@ public class SampleController {
     
     
     public ImageView imgOubah;
+    
+    @FXML
+    private StackPane content;
     
     private boolean isActive = false;
     
@@ -33,7 +39,12 @@ public class SampleController {
         
     }
     
+    public void lanceJeu(ActionEvent actionEvent) {
+    	
+    	System.out.println("Lacement Du jeu");
+    	//content.getChildren().setAll(FXMLLoader.load("GameApp/BasicApplication_css.fxml"));
     
+    }
     
     
     

@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
          <image>
-            <Image url="@../data/duck.jpg" />
+            <Image url="@../../data/duck.jpg" />
          </image>
       </ImageView>
       <GridPane>
@@ -50,6 +50,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
                         <Label fx:id="textcool" GridPane.halignment="CENTER">
@@ -67,11 +68,16 @@
                               <Font name="Caladea Bold" size="57.0" />
                            </font>
                         </Label>
+                        <Button mnemonicParsing="false" onAction="#lanceJeu" text="LANCER LE JEU" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Button>
                      </children>
                   </GridPane>
                   <ImageView fx:id="imgOubah" fitHeight="303.0" fitWidth="379.0" pickOnBounds="true" preserveRatio="true" rotate="23.5" translateY="-100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <image>
-                        <Image url="@../data/loubahssi.png" />
+                        <Image url="@../../data/loubahssi.png" />
                      </image>
                   </ImageView>
                </children>
