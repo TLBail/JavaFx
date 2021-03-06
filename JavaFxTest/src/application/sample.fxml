@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
          <image>
-            <Image url="@../../data/duck.jpg" />
+            <Image url="@../data/duck.jpg" />
          </image>
       </ImageView>
       <GridPane>
@@ -77,7 +77,7 @@
                   </GridPane>
                   <ImageView fx:id="imgOubah" fitHeight="303.0" fitWidth="379.0" pickOnBounds="true" preserveRatio="true" rotate="23.5" translateY="-100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <image>
-                        <Image url="@../../data/loubahssi.png" />
+                        <Image url="@../data/loubahssi.png" />
                      </image>
                   </ImageView>
                </children>

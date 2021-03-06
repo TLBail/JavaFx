@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #212D40;" styleClass="application.cc" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <AnchorPane prefHeight="1035.0" prefWidth="532.0" style="-fx-background-color: #11151C;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="209.0" prefHeight="872.0" prefWidth="532.0" style="-fx-background-color: #181925;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="209.0">
+               <children>
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="92.0" prefWidth="553.0" styleClass="button1" text="Information" textFill="#ffffffe7">
+                     <font>
+                        <Font name="Arial" size="43.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../data/info.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="20.0" left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="553.0" styleClass="button1" text="Aide" textFill="#ffffffe7">
+                     <font>
+                        <Font name="Arial" size="43.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../data/question-mark-1750942.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="20.0" left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="92.0" prefWidth="553.0" styleClass="button1" text="Fonctionement" textFill="#ffffffe7">
+                     <font>
+                        <Font name="Arial" size="43.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../data/gear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="20.0" left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="234.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="553.0" styleClass="button1" text="Outils" textFill="#ffffffe7">
+                     <font>
+                        <Font name="Arial" size="43.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../data/Tool.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets bottom="20.0" left="50.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="374.0" prefWidth="527.0" text="T L B prod" textFill="#fffffff2">
+                     <font>
+                        <Font name="Arial" size="41.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Pane layoutX="5.0" layoutY="66.0" prefHeight="104.0" prefWidth="522.0" style="-fx-background-color: #D66853; -fx-background-radius: 100;">
+               <children>
+                  <Text fill="#ffffffe4" layoutX="15.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Gaming" textAlignment="CENTER" wrappingWidth="492.3740234375">
+                     <font>
+                        <Font name="Arial Bold" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Canvas fx:id="canvas" height="1061.0" layoutX="549.0" layoutY="11.0" width="1361.0" />
+   </children>
+</AnchorPane>

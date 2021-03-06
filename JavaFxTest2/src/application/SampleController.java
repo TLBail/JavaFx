@@ -5,6 +5,7 @@ import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
@@ -16,11 +17,8 @@ public class SampleController {
 
     public Label textcool, textLabel;
     
-    
-    public ImageView imgOubah;
-    
     @FXML
-    private StackPane content;
+    private Canvas canvas;
     
     private boolean isActive = false;
     
