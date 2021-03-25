@@ -39,7 +39,7 @@ Procédure d'instalation de java Fx sur ton pc
 	tu selectionne la librairy java Fx 15 puis sur finish  
 	tu clique sur Apply and Close  
 
-ensuite dans tout les cas tu doit rajouter une ligne de commande pour la génération de l'application  
+- ensuite dans tout les cas tu doit rajouter une ligne de commande pour la génération de l'application  
 	sur le petit bouton vert qui te permet de lancer l'app tu clique sur la fleche pour afficher les option 
 	puis tu clique sur Run configurations  
 	dans les onglet en haut tu clique sur Arguments  
