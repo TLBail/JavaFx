@@ -48,7 +48,7 @@ Procédure d'instalation de java Fx sur ton pc
 		--module-path ../.jdk/javafx-sdk-15.0.1/lib --add-modules=javafx.controls,javafx.fxml	
 	* sinon  
 		* tu modifie cette ligne de commande  
-		--module-path CHANGEMOI --add-modules=javafx.controls,javafx.fxml	
+		--module-path CHANGEMOI --add-modules=javafx.controls,javafx.fxml  	
 		en changean CHANGEMOI par le chemin vers le dossier lib de javafx-sdk  
 	tu clique sur Apply puis  close ou run  
 
