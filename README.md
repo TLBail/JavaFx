@@ -3,7 +3,7 @@
 
 Procédure d'instalation de java Fx sur ton pc 
 
-#déja t'installe :
+# déja t'installe :
 - e(fx) pc de l'iut -> déja installer  
       ton pc -> Help / Eclipse Marketplace et la tu cherche e(fx)clipse
 
@@ -45,10 +45,14 @@ Procédure d'instalation de java Fx sur ton pc
 	dans les onglet en haut tu clique sur Arguments  
 	* 2  option sois tu as importé ce dépot github et tu l'à ouvert avec éclipse alors  
 		* tu rajoute cette ligne dans VM arguments:  
-		--module-path ../.jdk/javafx-sdk-15.0.1/lib --add-modules=javafx.controls,javafx.fxml	
+		```
+		--module-path ../.jdk/javafx-sdk-15.0.1/lib --add-modules=javafx.controls,javafx.fxml  
+		```
 	* sinon  
-		* tu modifie cette ligne de commande  
-		--module-path CHANGEMOI --add-modules=javafx.controls,javafx.fxml  	
+		* tu modifie cette ligne de commande
+		```  
+		--module-path CHANGEMOI --add-modules=javafx.controls,javafx.fxml  
+		```
 		en changean CHANGEMOI par le chemin vers le dossier lib de javafx-sdk  
 	tu clique sur Apply puis  close ou run  
 
