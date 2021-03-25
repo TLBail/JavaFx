@@ -52,7 +52,16 @@ ensuite dans tout les cas tu doit rajouter une ligne de commande pour la génér
 		en changean CHANGEMOI par le chemin vers le dossier lib de javafx-sdk
 	tu clique sur Apply puis  close ou run
 
+ensuite tu peux configurer scene builder pour éclipse
+	Windows / préférences
+	clique sur Java Fx 
+	tu clique sur le button Browse ... de SceneBuilder executable
+	tu sélectionne l'executable dans le dépot github
+	et maintenant tu peux ouvrir n'importe qu'elle fichier fxml
+
 et normalement tout est bon
+
+
 cette procédure n'est certainement pas parfaite donc merci de ne 
 pas faire chier si il y a des erreur ou que sa marche pas dans tout 
 les cas je vous répond
