@@ -24,7 +24,7 @@ Procédure d'instalation de java Fx sur ton pc
 	tu selectionne la librairy java Fx 15 puis sur finish  
 	tu clique sur Apply and Close  
 
-- si c un projet que tu a ouvert a importé dans éclipse tu doit importé les lib
+- si c un projet que tu a ouvert(tu sélectionne comme workspace le dossier github et importé dans éclipse(File / Open project from file system) tu doit importé les lib
 	clic droit sur ton dossier de projet puis properties  
 	dans Java Build Path puis les onglet en haut tu choisi librairies  
 	ensuite tu click sur  le ClassPath et tu fait add library...  
