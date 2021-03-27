@@ -58,5 +58,5 @@ pom.xml.tag
 
 
 # scene build et jdk
-!JavaFXSceneBuilder/
-!.jdk/
+!/JavaFXSceneBuilder/
+!/.jdk/
