@@ -1,7 +1,14 @@
-.texte{
-	-fx-background-color : #393351;
+
+
+.Videobutton{
+	 -fx-background-color : #999999;
 }
 
-.texte:hover{
+
+.Videobutton:hover{
 	-fx-background-color : #524A7B ;
+	-fx-padding : 20;
 }
+
+
+
