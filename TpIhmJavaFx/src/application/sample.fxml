@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="353.0" prefWidth="776.0">
+               <children>
+                  <Label layoutX="39.0" layoutY="14.0" text="Police" />
+                  <ListView fx:id="listPolice" layoutX="39.0" layoutY="56.0" onMouseClicked="#OnSelectionOfPolice" prefHeight="200.0" prefWidth="200.0" />
+                  <Label layoutX="253.0" layoutY="14.0" text="Style de Police" />
+                  <ListView fx:id="listStylePolice" layoutX="253.0" layoutY="56.0" onMouseClicked="#OnSelectionOfStylePolice" prefHeight="200.0" prefWidth="200.0" />
+                  <TextField fx:id="textFieldPolice" layoutX="39.0" layoutY="31.0" />
+                  <TextField fx:id="textFieldStylePolice" layoutX="253.0" layoutY="31.0" />
+                  <Label layoutX="464.0" layoutY="14.0" text="Taille" />
+                  <TextField fx:id="textFieldTaille" layoutX="464.0" layoutY="31.0" />
+                  <ListView fx:id="listTaille" layoutX="464.0" layoutY="56.0" onMouseClicked="#OnSelectionOfTaille" prefHeight="200.0" prefWidth="200.0" />
+                  <Label layoutX="39.0" layoutY="265.0" text="Couleur" />
+                  <ColorPicker layoutX="41.0" layoutY="292.0" />
+               </children>
+            </AnchorPane>
+            <FlowPane prefHeight="32.0" prefWidth="776.0">
+               <children>
+                  <Label text="Effet" />
+               </children>
+            </FlowPane>
+            <TilePane prefHeight="70.0" prefWidth="778.0">
+               <children>
+                  <AnchorPane prefHeight="98.0" prefWidth="778.0">
+                     <children>
+                        <CheckBox layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="14.0" layoutY="31.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="14.0" layoutY="48.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="14.0" layoutY="65.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="389.0" layoutY="14.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="389.0" layoutY="31.0" mnemonicParsing="false" text="CheckBox" />
+                        <CheckBox layoutX="389.0" layoutY="48.0" mnemonicParsing="false" text="CheckBox" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </TilePane>
+            <FlowPane prefHeight="72.0" prefWidth="778.0">
+               <children>
+                  <Label text="Aperçu" />
+               </children>
+            </FlowPane>
+            <GridPane alignment="TOP_RIGHT" prefHeight="114.0" prefWidth="778.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="783.0" text="Police TrueType, identique à l’écran et à l’impression" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Canvas fx:id="canvaText" height="36.0" width="777.0" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="93.0" prefWidth="717.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="643.0" layoutY="18.0" mnemonicParsing="false" onAction="#OnApplyButton" text="Ok" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="101.0" />
+            <Button layoutX="698.0" layoutY="18.0" mnemonicParsing="false" onAction="#OnAnnulerCliked" text="annuler" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="22.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

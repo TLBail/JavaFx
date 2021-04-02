@@ -1,0 +1,47 @@
+
+]squid:S1444x"(Make this "public static gc" field final(°‹ü¦ûÿÿÿÿHÒRMINORZVULNERABILITY
+†squid:S2293M"YReplace the type specification in this constructor call with the diamond operator ("<>").(”˜öHÓRMINORZ
+CODE_SMELL
+asquid:S1604N"(Make this anonymous inner class a lambda(÷»àøÿÿÿÿ8¹Á®ï†/HÔRMAJORZ
+CODE_SMELL
+osquid:S2259/"DA "NullPointerException" could be thrown; "canvas" is nullable here.(á“ï‘şÿÿÿÿHÕRMAJORZBUG
+¨squid:S1319}"{The type of the "currentlyActiveKeys" object should be an interface such as "Set" rather than the implementation "HashSet".(ÕšÖÓHÖRMINORZ
+CODE_SMELL
+isquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕH×RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck "7Remove this unused import 'javafx.scene.shape.ArcType'.(ÖİìğHØRMINORZ
+CODE_SMELL
+psquid:HiddenFieldChecki"8Rename "img" which hides the field declared at line 122.(¹’™ÜHÙRMAJORZ
+CODE_SMELL
+™"squid:ClassVariableVisibilityCheckw"RMake canvas a static final constant or non-public and provide accessors if needed.(á³ú‹HÚRMINORZVULNERABILITY
+asquid:S1604T"(Make this anonymous inner class a lambda(Ö€ÏÅúÿÿÿÿ8¹Á®ï†/HÛRMAJORZ
+CODE_SMELL
+qsquid:UselessImportCheck"7Remove this unused import 'javafx.animation.Animation'.(Æ“ğòHÜRMINORZ
+CODE_SMELL
+ksquid:UselessImportCheck",Remove this unused import 'java.io.Console'.(æÅªıÿÿÿÿHİRMINORZ
+CODE_SMELL
+ksquid:S2696,"6Make the enclosing method "static" or remove this set.(Ä²íäıÿÿÿÿHŞRCRITICALZ
+CODE_SMELL
+¦"squid:ClassVariableVisibilityCheck}"_Make currentlyActiveKeys a static final constant or non-public and provide accessors if needed.(ÕšÖÓHßRMINORZVULNERABILITY
+^squid:S2386M".Make member "currentlyActiveKeys" "protected".(”˜öHàRMINORZVULNERABILITY
+Ysquid:S1659|"'Declare "timeStart" on a separate line.(¥®ú½øÿÿÿÿHáRMINORZ
+CODE_SMELL
+isquid:S1444}"9Make this "public static currentlyActiveKeys" field final(ÕšÖÓHâRMINORZVULNERABILITY
+\squid:S16049"(Make this anonymous inner class a lambda(¥Û–¢8¹Á®ï†/HãRMAJORZ
+CODE_SMELL
+\squid:S1444w",Make this "public static canvas" field final(á³ú‹HäRMINORZVULNERABILITY
+š"squid:ClassVariableVisibilityCheckx"NMake gc a static final constant or non-public and provide accessors if needed.(°‹ü¦ûÿÿÿÿHåRMINORZVULNERABILITY
+osquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»ÚıÿÿÿÿHæRMINORZ
+CODE_SMELL
+€squid:UselessImportCheck"ARemove this unused import 'javafx.animation.TranslateTransition'.(¬°™ªøÿÿÿÿHçRMINORZ
+CODE_SMELL
+¿%squid:RedundantThrowsDeclarationCheck%"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8¹Á®ï†/HèRMINORZ
+CODE_SMELL
+ksquid:S2696/"6Make the enclosing method "static" or remove this set.(á“ï‘şÿÿÿÿHéRCRITICALZ
+CODE_SMELL
+xsquid:UselessImportCheck"9Remove this unused import 'javafx.scene.image.ImageView'.(áÿ®ÃüÿÿÿÿHêRMINORZ
+CODE_SMELL
+squid:S1192h"LDefine a constant instead of duplicating this literal "pas trouvÃ©" 3 times.(´œÄÖûÿÿÿÿHëRCRITICALZ
+CODE_SMELL
+ksquid:S2696b"6Make the enclosing method "static" or remove this set.(ÚçÇúÿÿÿÿHìRCRITICALZ
+CODE_SMELL
