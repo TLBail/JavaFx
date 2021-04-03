@@ -58,7 +58,7 @@
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../data/stop.png" />
+                              <Image url="@../ressources/stop.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -73,7 +73,7 @@
                      <graphic>
                         <ImageView fx:id="playButtonImgView" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../data/play.png" />
+                              <Image url="@../ressources/play.png" />
                            </image>
                         </ImageView>
                      </graphic>

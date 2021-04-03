@@ -24,7 +24,7 @@ public class Main extends Application {
         
         
         //icon
-        InputStream iconStream = getClass().getResourceAsStream("..\\data\\icon.jpg");
+        InputStream iconStream = getClass().getResourceAsStream("..\\ressources\\icon.jpg");
         if(iconStream == null) {
         	System.out.println("pas trouvé");
         }else {

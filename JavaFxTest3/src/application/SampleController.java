@@ -49,9 +49,9 @@ public class SampleController {
    
    
    public SampleController() {
-	   InputStream imgStream = getClass().getResourceAsStream("..\\data\\play.png");
+	   InputStream imgStream = getClass().getResourceAsStream("..\\ressources\\play.png");
 	   playImage = new Image(imgStream);
-	   imgStream = getClass().getResourceAsStream("..\\data\\pause.png");
+	   imgStream = getClass().getResourceAsStream("..\\ressources\\pause.png");
 	   pauseImage = new Image(imgStream);
 
 	   
