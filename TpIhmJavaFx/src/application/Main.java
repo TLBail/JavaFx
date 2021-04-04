@@ -10,8 +10,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
 
 
 public class Main extends Application {
@@ -24,7 +26,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
-        scene = new Scene(root, 1200, 800);
+        scene = new Scene(root, 634, 618);
         primaryStage.setScene(scene);
         stage = primaryStage;
         ListView<String> listPolice = (ListView<String>) scene.lookup("#listPolice");
@@ -49,7 +51,9 @@ public class Main extends Application {
 		    
 		}
 	    listTaille.setItems(itemslistTaille);
-	    
+	   
+	    ColorPicker colorPicker = (ColorPicker) scene.lookup("#colorPicker");
+	    colorPicker.setValue(Color.BLACK);
 	    
 	    
 		primaryStage.show();

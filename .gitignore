@@ -60,3 +60,4 @@ pom.xml.tag
 # scene build et jdk
 !/JavaFXSceneBuilder/
 !/.jdk/
+/.recommenders/

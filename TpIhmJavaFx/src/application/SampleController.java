@@ -14,9 +14,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.VPos;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Slider;
@@ -28,8 +30,10 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Stop;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
@@ -57,9 +61,14 @@ public class SampleController {
 	@FXML
 	Canvas canvaText;
 	
+	@FXML
+	ColorPicker colorPicker;
+	
+	
 	private String police = "Calibri", Style;
 	private Double taille = 10d;
-	private boolean bold = false;
+	private boolean bold = false, italique = false;
+	private Color textColor = Color.BLACK;
 	
    public SampleController() {
 	   
@@ -81,11 +90,8 @@ public class SampleController {
    void OnSelectionOfStylePolice(MouseEvent event) {
 	   Style = listStylePolice.getFocusModel().getFocusedItem();
 	   textFieldStylePolice.setText(Style);
-	   if(Style.contains("Gras")){
-		   bold = true;
-	   }else{
-		   bold = false;
-	   }
+	   bold = Style.contains("Gras");
+	   italique = Style.contains("Italique");
   }
    
    @FXML
@@ -107,17 +113,32 @@ public class SampleController {
 	 gc.clearRect(0, 0, canvaText.getWidth(), canvaText.getHeight());
 	 
 	 if(bold){
-		 
-		 gc.setFont(Font.font(police, FontWeight.BOLD, taille));
-	 }else{
-		 gc.setFont(Font.font(police, taille));
-		 
+		 if(italique) {
+			 gc.setFont(Font.font(police, FontWeight.BOLD, FontPosture.ITALIC, taille));
+		 }else {
+			 gc.setFont(Font.font(police, FontWeight.BOLD, taille));
+		 }
+	}else{
+		if(italique) {
+			gc.setFont(Font.font(police, FontPosture.ITALIC, taille));
+		}else {
+			 gc.setFont(Font.font(police, taille));
+			 	
+		}
 	 }
-	 
-	 gc.fillText("IUT de laval", canvaText.getWidth()/2, canvaText.getHeight()/2);
+	 gc.setLineWidth(1);
+	 gc.setFill(Color.BLACK);
 	 gc.strokeLine(0, canvaText.getHeight()/2, canvaText.getWidth()/4, canvaText.getHeight()/2);
 	 gc.strokeLine(canvaText.getWidth() / 2 + canvaText.getWidth() / 4, canvaText.getHeight()/2, canvaText.getWidth(), canvaText.getHeight()/2);
-	 
+	 gc.setLineWidth(2);
+	 gc.strokeRect(0, 0, canvaText.getWidth(), canvaText.getHeight());
+	 gc.fillText("IUT de laval", canvaText.getWidth()/3, canvaText.getHeight()/2);
+	}
+   
+   
+   @FXML
+   void OnColorPickerChange(ActionEvent event) {
+	   textColor =  colorPicker.getValue();
    }
    
    /* 
