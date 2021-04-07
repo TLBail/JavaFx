@@ -8,71 +8,71 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <center>
       <VBox prefHeight="598.0" prefWidth="199.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane prefHeight="318.0" prefWidth="634.0">
+            <AnchorPane prefHeight="318.0" prefWidth="286.0">
                <children>
                   <Label layoutX="19.0" layoutY="14.0" text="Police" />
-                  <ListView fx:id="listPolice" layoutX="14.0" layoutY="56.0" onMouseClicked="#OnSelectionOfPolice" prefHeight="200.0" prefWidth="200.0" />
-                  <Label layoutX="218.0" layoutY="14.0" text="Style de Police" />
-                  <ListView fx:id="listStylePolice" layoutX="218.0" layoutY="56.0" onMouseClicked="#OnSelectionOfStylePolice" prefHeight="200.0" prefWidth="200.0" />
-                  <TextField fx:id="textFieldPolice" layoutX="14.0" layoutY="31.0" />
-                  <TextField fx:id="textFieldStylePolice" layoutX="218.0" layoutY="31.0" />
-                  <Label layoutX="422.0" layoutY="14.0" text="Taille" />
-                  <TextField fx:id="textFieldTaille" layoutX="422.0" layoutY="31.0" />
-                  <ListView fx:id="listTaille" layoutX="422.0" layoutY="56.0" onMouseClicked="#OnSelectionOfTaille" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView fx:id="listPolice" layoutX="14.0" layoutY="56.0" onMouseClicked="#OnSelectionOfPolice" prefHeight="200.0" prefWidth="199.0" />
+                  <Label layoutX="221.0" layoutY="14.0" text="Style de Police" />
+                  <ListView fx:id="listStylePolice" layoutX="221.0" layoutY="56.0" onMouseClicked="#OnSelectionOfStylePolice" prefHeight="200.0" prefWidth="149.0" />
+                  <TextField fx:id="textFieldPolice" layoutX="14.0" layoutY="31.0" onAction="#OnTextFielChange" />
+                  <TextField fx:id="textFieldStylePolice" layoutX="221.0" layoutY="31.0" onAction="#OnTextFielChange" />
+                  <Label layoutX="380.0" layoutY="14.0" text="Taille" />
+                  <TextField fx:id="textFieldTaille" layoutX="380.0" layoutY="31.0" onAction="#OnTextFielChange" prefHeight="25.0" prefWidth="70.0" />
+                  <ListView fx:id="listTaille" layoutX="380.0" layoutY="56.0" onMouseClicked="#OnSelectionOfTaille" prefHeight="200.0" prefWidth="70.0" />
                   <Label layoutX="35.0" layoutY="265.0" text="Couleur de police :" AnchorPane.leftAnchor="20.0" />
-                  <ColorPicker fx:id="colorPicker" layoutX="20.0" layoutY="290.0" onAction="#OnColorPickerChange" prefHeight="23.0" prefWidth="165.0" />
-                  <ChoiceBox layoutX="218.0" layoutY="289.0" prefWidth="150.0" />
-                  <Label layoutX="218.0" layoutY="265.0" text="Soulignement" />
-                  <ColorPicker fx:id="colorPicker1" layoutX="422.0" layoutY="290.0" onAction="#OnColorPickerChange" prefHeight="23.0" prefWidth="165.0" />
-                  <Label layoutX="422.0" layoutY="265.0" text="Couleur de soulignement :" />
+                  <ColorPicker fx:id="colorPicker" layoutX="20.0" layoutY="290.0" onAction="#OnColorPickerChange" prefHeight="25.0" prefWidth="104.0" />
+                  <ChoiceBox fx:id="soulignementChoiceBox" layoutX="163.0" layoutY="292.0" onMouseClicked="#OnChangeRenderText" onMousePressed="#OnChangeRenderText" prefHeight="25.0" prefWidth="140.0" />
+                  <Label layoutX="163.0" layoutY="265.0" text="Soulignement" />
+                  <ColorPicker fx:id="soulignementcolorPicker" layoutX="312.0" layoutY="292.0" onAction="#OnColorPickerChange" prefHeight="25.0" prefWidth="137.0" />
+                  <Label layoutX="310.0" layoutY="265.0" text="Couleur de soulignement :" />
                </children>
             </AnchorPane>
-            <FlowPane prefHeight="17.0" prefWidth="371.0">
+            <FlowPane prefHeight="17.0" prefWidth="441.0">
                <children>
                   <Label text="Effet">
                      <padding>
                         <Insets left="20.0" />
                      </padding></Label>
-                  <Line endX="450.0" opacity="0.49" startX="-100.0">
+                  <Line endX="270.0" opacity="0.49" startX="-100.0">
                      <FlowPane.margin>
                         <Insets left="30.0" />
                      </FlowPane.margin>
                   </Line>
                </children>
             </FlowPane>
-            <TilePane prefHeight="70.0" prefWidth="778.0">
+            <TilePane prefHeight="98.0" prefWidth="492.0">
                <children>
-                  <AnchorPane prefHeight="98.0" prefWidth="632.0">
+                  <AnchorPane prefHeight="98.0" prefWidth="464.0">
                      <children>
-                        <CheckBox layoutX="50.0" layoutY="5.0" mnemonicParsing="false" text="Barré" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="50.0" layoutY="24.0" mnemonicParsing="false" text="Barré double" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="50.0" layoutY="43.0" mnemonicParsing="false" text="Exposant" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="50.0" layoutY="63.0" mnemonicParsing="false" text="Indice" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="389.0" layoutY="5.0" mnemonicParsing="false" text="Petite majuscules" />
-                        <CheckBox layoutX="389.0" layoutY="24.0" mnemonicParsing="false" text="Majuscules" />
-                        <CheckBox layoutX="389.0" layoutY="43.0" mnemonicParsing="false" text="Masqué" />
+                        <CheckBox fx:id="barreCheckBox" layoutX="50.0" layoutY="5.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Barré" AnchorPane.leftAnchor="50.0" />
+                        <CheckBox layoutX="50.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Barré double" AnchorPane.leftAnchor="50.0" />
+                        <CheckBox layoutX="50.0" layoutY="43.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Exposant" AnchorPane.leftAnchor="50.0" />
+                        <CheckBox layoutX="50.0" layoutY="63.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Indice" AnchorPane.leftAnchor="50.0" />
+                        <CheckBox layoutX="303.0" layoutY="5.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Petite majuscules" />
+                        <CheckBox layoutX="303.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Majuscules" />
+                        <CheckBox layoutX="303.0" layoutY="43.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Masqué" />
                      </children>
                   </AnchorPane>
                </children>
             </TilePane>
-            <FlowPane prefHeight="12.0" prefWidth="634.0">
+            <FlowPane prefHeight="17.0" prefWidth="461.0">
                <children>
                   <Label text="Aperçu">
                      <padding>
                         <Insets left="20.0" />
                      </padding></Label>
-                  <Line endX="450.0" opacity="0.49" startX="-100.0">
+                  <Line endX="270.0" opacity="0.49" startX="-100.0">
                      <FlowPane.margin>
                         <Insets left="15.0" />
                      </FlowPane.margin>
                   </Line>
                </children>
             </FlowPane>
-            <GridPane alignment="TOP_RIGHT" prefHeight="126.0" prefWidth="634.0">
+            <GridPane alignment="TOP_RIGHT" prefHeight="126.0" prefWidth="353.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -81,25 +81,29 @@
                 <RowConstraints maxHeight="31.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="783.0" text="Police TrueType, identique à l’écran et à l’impression" GridPane.rowIndex="1">
+                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="378.0" text="Police TrueType, identique à l’écran et à l’impression" GridPane.rowIndex="1">
                      <padding>
                         <Insets left="30.0" />
                      </padding>
                   </Label>
-                  <Canvas fx:id="canvaText" height="93.0" width="575.0">
-                     <GridPane.margin>
-                        <Insets left="30.0" right="10.0" top="10.0" />
-                     </GridPane.margin></Canvas>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Canvas fx:id="canvaText" height="93.0" width="442.0" />
+                        <Text fx:id="textToDisplay" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                  </StackPane>
                </children>
             </GridPane>
          </children>
       </VBox>
    </center>
    <bottom>
-      <AnchorPane prefHeight="10.0" prefWidth="634.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="43.0" prefWidth="498.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="643.0" layoutY="18.0" mnemonicParsing="false" onAction="#OnApplyButton" text="Ok" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="101.0" />
-            <Button layoutX="698.0" layoutY="18.0" mnemonicParsing="false" onAction="#OnAnnulerCliked" text="annuler" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="22.0" />
+            <Button layoutX="275.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnApplyButton" prefHeight="25.0" prefWidth="87.0" text="Ok" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="102.0" />
+            <Button layoutX="369.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnAnnulerCliked" prefHeight="25.0" prefWidth="88.0" text="annuler" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="7.0" />
+            <Button layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnDefaultButton" prefHeight="25.0" prefWidth="120.0" text="Définir par défaut" />
+            <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnApplyButton" prefHeight="25.0" prefWidth="120.0" text="Effets de texte..." />
          </children>
       </AnchorPane>
    </bottom>

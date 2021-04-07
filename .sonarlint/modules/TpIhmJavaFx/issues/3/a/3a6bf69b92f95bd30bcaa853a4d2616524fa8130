@@ -1,0 +1,72 @@
+
+Usquid:S1659<"#Declare "Style" on a separate line.(ˇ«˙è˝ˇˇˇˇHÁRMINORZ
+CODE_SMELL
+Üsquid:S1450<"TRemove the "Style" field and declare it as a local variable in the relevant methods.(ˇ«˙è˝ˇˇˇˇHËRMINORZ
+CODE_SMELL
+|squid:S00100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(πú–òHÈRMINORZ
+CODE_SMELL
+Åsquid:S00100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È¡Û∫˝ˇˇˇˇHÍRMINORZ
+CODE_SMELL
+Åsquid:S00100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çßﬁö˝ˇˇˇˇHÎRMINORZ
+CODE_SMELL
+Åsquid:S00100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÊ€£ˇˇˇˇˇHÏRMINORZ
+CODE_SMELL
+Åsquid:S00100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑäòÂ¯ˇˇˇˇHÌRMINORZ
+CODE_SMELL
+Åsquid:S00100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë§Áê˛ˇˇˇˇHÓRMINORZ
+CODE_SMELL
+±squid:S1186F"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(πú–òHÔRCRITICALZ
+CODE_SMELL
+±squid:S1186@"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(êó´çHRCRITICALZ
+CODE_SMELL
+Ésquid:S00116<"PRename this field "Style" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˇ«˙è˝ˇˇˇˇHÒRMINORZ
+CODE_SMELL
+wsquid:UselessImportCheck"8Remove this unused import 'javafx.scene.control.Button'.(À†Õã¯ˇˇˇˇHÚRMINORZ
+CODE_SMELL
+wsquid:UselessImportCheck"=Remove this unused import 'javafx.collections.FXCollections'.(¥∂≤∆HÛRMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck":Remove this unused import 'javafx.scene.layout.StackPane'.(ô˜ËÚHÙRMINORZ
+CODE_SMELL
+xsquid:UselessImportCheck"9Remove this unused import 'javafx.scene.media.MediaView'.(Ö‹·Ô˛ˇˇˇˇHıRMINORZ
+CODE_SMELL
+rsquid:UselessImportCheck"8Remove this unused import 'javafx.scene.control.Slider'.(‘„√ôHˆRMINORZ
+CODE_SMELL
+rsquid:UselessImportCheck"3Remove this unused import 'javafx.fxml.FXMLLoader'.(¿áÙ≥˙ˇˇˇˇH˜RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"7Remove this unused import 'javafx.animation.Animation'.(∆ìÚH¯RMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck";Remove this unused import 'javafx.scene.media.MediaPlayer'.(áµ∫UH˘RMINORZ
+CODE_SMELL
+osquid:UselessImportCheck""5Remove this unused import 'javafx.scene.web.WebView'.(∏≠¨—H˙RMINORZ
+CODE_SMELL
+vsquid:UselessImportCheck"7Remove this unused import 'javafx.scene.control.Label'.(ˆ≤≠ûˇˇˇˇˇH˚RMINORZ
+CODE_SMELL
+ssquid:UselessImportCheck"4Remove this unused import 'javafx.scene.paint.Stop'.(ì·‚À¯ˇˇˇˇH¸RMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(™∫ª⁄˝ˇˇˇˇH˝RMINORZ
+CODE_SMELL
+csquid:UselessImportCheck")Remove this unused import 'java.io.File'.(Ü–•≈H˛RMINORZ
+CODE_SMELL
+osquid:UselessImportCheck#"5Remove this unused import 'javafx.stage.FileChooser'.(ñπéÎHˇRMINORZ
+CODE_SMELL
+ksquid:UselessImportCheck$"1Remove this unused import 'javafx.util.Duration'.(ÁΩÆßHÄRMINORZ
+CODE_SMELL
+xsquid:UselessImportCheck"9Remove this unused import 'javafx.scene.image.ImageView'.(·ˇÆ√¸ˇˇˇˇHÅRMINORZ
+CODE_SMELL
+Äsquid:UselessImportCheck	"ARemove this unused import 'javafx.animation.TranslateTransition'.(¨∞ô™¯ˇˇˇˇHÇRMINORZ
+CODE_SMELL
+ysquid:UselessImportCheck"?Remove this unused import 'javafx.beans.value.ObservableValue'.(¥ú´≈HÉRMINORZ
+CODE_SMELL
+}squid:UselessImportCheck">Remove this unused import 'javafx.collections.ObservableList'.(ƒ‹ÄÈ¸ˇˇˇˇHÑRMINORZ
+CODE_SMELL
+ksquid:UselessImportCheck"1Remove this unused import 'java.util.Observable'.( ≤Í∏HÖRMINORZ
+CODE_SMELL
+xsquid:UselessImportCheck
+">Remove this unused import 'javafx.beans.value.ChangeListener'.(ç∏˜ÕHÜRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"5Remove this unused import 'javafx.scene.image.Image'.(âøΩ«HáRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"5Remove this unused import 'javafx.scene.media.Media'.(ø‡∆æHàRMINORZ
+CODE_SMELL
+jsquid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(πª∫ùHâRMINORZ
+CODE_SMELL
