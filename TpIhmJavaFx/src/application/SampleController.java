@@ -250,7 +250,7 @@ public class SampleController {
 	  listStylePolice.getSelectionModel().select(0);
 	  barreCheckBox.setSelected(false);
 	  soulignementChoiceBox.setValue("(aucun)");
-	  colorPicker.setValue(Color.BLACK);
+	  colorPicker.setValue(Color.WHITE);
 	  
 	  renderText();
    }

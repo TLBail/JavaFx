@@ -8,36 +8,57 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="464.0" style="-fx-background-color: #2B303A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <center>
       <VBox prefHeight="598.0" prefWidth="199.0" BorderPane.alignment="CENTER">
          <children>
             <AnchorPane prefHeight="318.0" prefWidth="286.0">
                <children>
-                  <Label layoutX="19.0" layoutY="14.0" text="Police" />
-                  <ListView fx:id="listPolice" layoutX="14.0" layoutY="56.0" onMouseClicked="#OnSelectionOfPolice" prefHeight="200.0" prefWidth="199.0" />
-                  <Label layoutX="221.0" layoutY="14.0" text="Style de Police" />
-                  <ListView fx:id="listStylePolice" layoutX="221.0" layoutY="56.0" onMouseClicked="#OnSelectionOfStylePolice" prefHeight="200.0" prefWidth="149.0" />
-                  <TextField fx:id="textFieldPolice" layoutX="14.0" layoutY="31.0" onAction="#OnTextFielChange" />
-                  <TextField fx:id="textFieldStylePolice" layoutX="221.0" layoutY="31.0" onAction="#OnTextFielChange" />
-                  <Label layoutX="380.0" layoutY="14.0" text="Taille" />
-                  <TextField fx:id="textFieldTaille" layoutX="380.0" layoutY="31.0" onAction="#OnTextFielChange" prefHeight="25.0" prefWidth="70.0" />
-                  <ListView fx:id="listTaille" layoutX="380.0" layoutY="56.0" onMouseClicked="#OnSelectionOfTaille" prefHeight="200.0" prefWidth="70.0" />
-                  <Label layoutX="35.0" layoutY="265.0" text="Couleur de police :" AnchorPane.leftAnchor="20.0" />
-                  <ColorPicker fx:id="colorPicker" layoutX="20.0" layoutY="290.0" onAction="#OnColorPickerChange" prefHeight="25.0" prefWidth="104.0" />
-                  <ChoiceBox fx:id="soulignementChoiceBox" layoutX="163.0" layoutY="292.0" onMouseClicked="#OnChangeRenderText" onMousePressed="#OnChangeRenderText" prefHeight="25.0" prefWidth="140.0" />
-                  <Label layoutX="163.0" layoutY="265.0" text="Soulignement" />
-                  <ColorPicker fx:id="soulignementcolorPicker" layoutX="312.0" layoutY="292.0" onAction="#OnColorPickerChange" prefHeight="25.0" prefWidth="137.0" />
-                  <Label layoutX="310.0" layoutY="265.0" text="Couleur de soulignement :" />
+                  <Label layoutX="19.0" layoutY="14.0" text="Police" textFill="#d64933">
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <ListView fx:id="listPolice" layoutX="14.0" layoutY="56.0" onMouseClicked="#OnSelectionOfPolice" prefHeight="200.0" prefWidth="199.0" style="-fx-border-color: #3C4553; -fx-background-color: #3C4553;" stylesheets="@BasicApplication.css" />
+                  <Label layoutX="221.0" layoutY="14.0" text="Style de Police" textFill="#d64933">
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <ListView fx:id="listStylePolice" layoutX="221.0" layoutY="56.0" onMouseClicked="#OnSelectionOfStylePolice" prefHeight="200.0" prefWidth="149.0" style="-fx-background-color: #3C4553; -fx-background-color: #3C4553;" stylesheets="@BasicApplication.css" />
+                  <TextField fx:id="textFieldPolice" layoutX="14.0" layoutY="31.0" onAction="#OnTextFielChange" stylesheets="@BasicApplication.css" />
+                  <TextField fx:id="textFieldStylePolice" layoutX="221.0" layoutY="31.0" onAction="#OnTextFielChange" stylesheets="@BasicApplication.css" />
+                  <Label layoutX="380.0" layoutY="14.0" text="Taille" textFill="#d64933">
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="textFieldTaille" layoutX="380.0" layoutY="31.0" onAction="#OnTextFielChange" prefHeight="25.0" prefWidth="70.0" stylesheets="@BasicApplication.css" />
+                  <ListView fx:id="listTaille" layoutX="380.0" layoutY="56.0" onMouseClicked="#OnSelectionOfTaille" prefHeight="200.0" prefWidth="70.0" style="-fx-background-color: #3C4553; -fx-border-color: #3C4553;" stylesheets="@BasicApplication.css" />
+                  <Label layoutX="35.0" layoutY="265.0" text="Couleur de police :" textFill="#d64933" AnchorPane.leftAnchor="20.0">
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <ColorPicker fx:id="colorPicker" layoutX="20.0" layoutY="290.0" onAction="#OnColorPickerChange" prefHeight="25.0" prefWidth="104.0" styleClass="colorPicker" stylesheets="@BasicApplication.css" />
+                  <ChoiceBox fx:id="soulignementChoiceBox" layoutX="163.0" layoutY="292.0" onMouseClicked="#OnChangeRenderText" onMousePressed="#OnChangeRenderText" prefHeight="25.0" prefWidth="140.0" stylesheets="@BasicApplication.css" />
+                  <Label layoutX="163.0" layoutY="265.0" text="Soulignement :" textFill="#d64933">
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <ColorPicker fx:id="soulignementcolorPicker" layoutX="312.0" layoutY="292.0" onAction="#OnColorPickerChange" prefHeight="25.0" prefWidth="137.0" styleClass="colorPicker" stylesheets="@BasicApplication.css" />
+                  <Label layoutX="280.0" layoutY="266.0" text="Couleur de soulignement :" textFill="#d64933">
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
                </children>
             </AnchorPane>
             <FlowPane prefHeight="17.0" prefWidth="441.0">
                <children>
-                  <Label text="Effet">
+                  <Label text="Effet" textFill="#d64933">
                      <padding>
                         <Insets left="20.0" />
-                     </padding></Label>
-                  <Line endX="270.0" opacity="0.49" startX="-100.0">
+                     </padding>
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <Line endX="270.0" opacity="0.49" startX="-100.0" stroke="#d64933">
                      <FlowPane.margin>
                         <Insets left="30.0" />
                      </FlowPane.margin>
@@ -48,24 +69,48 @@
                <children>
                   <AnchorPane prefHeight="98.0" prefWidth="464.0">
                      <children>
-                        <CheckBox fx:id="barreCheckBox" layoutX="50.0" layoutY="5.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Barré" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="50.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Barré double" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="50.0" layoutY="43.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Exposant" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="50.0" layoutY="63.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Indice" AnchorPane.leftAnchor="50.0" />
-                        <CheckBox layoutX="303.0" layoutY="5.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Petite majuscules" />
-                        <CheckBox layoutX="303.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Majuscules" />
-                        <CheckBox layoutX="303.0" layoutY="43.0" mnemonicParsing="false" onAction="#OnChangeRenderText" text="Masqué" />
+                        <CheckBox fx:id="barreCheckBox" layoutX="50.0" layoutY="5.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Barré" textFill="#d64933" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
+                        <CheckBox layoutX="50.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Barré double" textFill="#d64933" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
+                        <CheckBox layoutX="50.0" layoutY="43.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Exposant" textFill="#d64933" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
+                        <CheckBox layoutX="50.0" layoutY="63.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Indice" textFill="#d64933" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
+                        <CheckBox layoutX="303.0" layoutY="5.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Petite majuscules" textFill="#d64933">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
+                        <CheckBox layoutX="303.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Majuscules" textFill="#d64933">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
+                        <CheckBox layoutX="303.0" layoutY="43.0" mnemonicParsing="false" onAction="#OnChangeRenderText" stylesheets="@BasicApplication.css" text="Masqué" textFill="#d64933">
+                           <font>
+                              <Font name="Liberation Mono" size="12.0" />
+                           </font></CheckBox>
                      </children>
                   </AnchorPane>
                </children>
             </TilePane>
             <FlowPane prefHeight="17.0" prefWidth="461.0">
                <children>
-                  <Label text="Aperçu">
+                  <Label text="Aperçu" textFill="#d64933">
                      <padding>
                         <Insets left="20.0" />
-                     </padding></Label>
-                  <Line endX="270.0" opacity="0.49" startX="-100.0">
+                     </padding>
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font></Label>
+                  <Line endX="270.0" opacity="0.49" startX="-100.0" stroke="#d64933">
                      <FlowPane.margin>
                         <Insets left="15.0" />
                      </FlowPane.margin>
@@ -81,10 +126,13 @@
                 <RowConstraints maxHeight="31.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="378.0" text="Police TrueType, identique à l’écran et à l’impression" GridPane.rowIndex="1">
+                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="443.0" text="Police TrueType, identique à l’écran et à l’impression" textFill="#d64933" GridPane.rowIndex="1">
                      <padding>
                         <Insets left="30.0" />
                      </padding>
+                     <font>
+                        <Font name="Liberation Mono" size="12.0" />
+                     </font>
                   </Label>
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
@@ -100,10 +148,22 @@
    <bottom>
       <AnchorPane prefHeight="43.0" prefWidth="498.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="275.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnApplyButton" prefHeight="25.0" prefWidth="87.0" text="Ok" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="102.0" />
-            <Button layoutX="369.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnAnnulerCliked" prefHeight="25.0" prefWidth="88.0" text="annuler" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="7.0" />
-            <Button layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnDefaultButton" prefHeight="25.0" prefWidth="120.0" text="Définir par défaut" />
-            <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnApplyButton" prefHeight="25.0" prefWidth="120.0" text="Effets de texte..." />
+            <Button layoutX="275.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnApplyButton" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #343A46;" stylesheets="@BasicApplication.css" text="Ok" textFill="#d64933" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="102.0">
+               <font>
+                  <Font size="9.0" />
+               </font></Button>
+            <Button layoutX="369.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnAnnulerCliked" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #343A46;" stylesheets="@BasicApplication.css" text="annuler" textFill="#d64933" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="7.0">
+               <font>
+                  <Font size="9.0" />
+               </font></Button>
+            <Button id="button" layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnDefaultButton" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #343A46;" stylesheets="@BasicApplication.css" text="Définir par défaut" textFill="#d64933">
+               <font>
+                  <Font size="9.0" />
+               </font></Button>
+            <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnApplyButton" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #343A46;" stylesheets="@BasicApplication.css" text="Effets de texte..." textFill="#d64933">
+               <font>
+                  <Font size="9.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </bottom>

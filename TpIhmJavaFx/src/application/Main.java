@@ -72,7 +72,7 @@ public class Main extends Application {
 	    listTaille.setItems(itemslistTaille);
 	   
 	    ColorPicker colorPicker = (ColorPicker) scene.lookup("#colorPicker");
-	    colorPicker.setValue(Color.BLACK);
+	    colorPicker.setValue(Color.WHITE);
 	    
 	    
 	    ChoiceBox<String> soulignementChoiceBox = (ChoiceBox) scene.lookup("#soulignementChoiceBox");
