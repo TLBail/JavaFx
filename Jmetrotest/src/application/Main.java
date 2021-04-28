@@ -25,13 +25,19 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
-        scene = new Scene(root, 800, 600);
-        primaryStage.setScene(scene);
-        stage = primaryStage;
-        JMetro jMetro = new JMetro(Style.LIGHT);
+        scene = new Scene(root, 800, 600);   
+        
+        JMetro jMetro = new JMetro(Style.DARK);
         jMetro.setScene(scene); 
-	    
-	    
+        
+        
+        
+        primaryStage.setScene(scene);
+        
+        
+       
+        stage = primaryStage;
+
 		primaryStage.show();
 		
 	}
